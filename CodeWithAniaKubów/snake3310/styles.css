@@ -1,0 +1,62 @@
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  border: #141d17 solid 10px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  background-color: #565ca4f1;
+  font-family: 'HNkani', sans-serif;
+  border-radius: 20% 20% 0 0;
+                                                
+                                                
+}
+.box {
+  border-radius: 0 0 10% 10%;
+  border-top: 0;
+  background-color: rgb(187, 184, 184);
+}
+.grid {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #c7f0d8;
+    border: 5px solid #364e3e;
+    
+    
+    
+  }
+  
+  .grid div {
+    width: 30px;
+    height: 30px;
+    
+  }
+  
+  .snake {
+    background-color: #141d17;
+    
+  }
+  
+  .apple {
+    background-color: #577e64;
+    
+  }
+  button {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 10px;
+  }
+  .score {
+    margin: 5px;
+  }
+  p {
+    margin: 5px;
+  }
