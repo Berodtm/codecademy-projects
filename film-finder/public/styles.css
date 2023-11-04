@@ -17,6 +17,16 @@ body {
   font-family: 'Staatliches', sans-serif;
   font-size: 80px;
 }
+.api-btn {
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #B97828;
+  color: #fdc238;
+  cursor:  pointer;
+}
 #genreForm, #playBtn {
   text-align: center;
   margin: 0px auto;
