@@ -12,7 +12,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    color: #2898FA;
+    color: #b1d9fc;
 }
 button, input {
     width: 150px;
@@ -20,6 +20,7 @@ button, input {
     border-radius: 5px;
     margin: 5px;
     text-align: center;
+    font-weight: bold;
 }
 
 button {
@@ -35,6 +36,11 @@ button:active {
     /* font-weight: bold; */
     outline: #2898FA;
     border: #2898FA solid 3px;
+}
+
+#subtract, #add {
+    width: 70px;
+    font-size: larger;
 }
 
 
@@ -84,8 +90,9 @@ main {
 }
 
 main div {
-    background-color: #2079C7;
+    background-color: #348ddb;
     border-radius: 5px;
+    color: #0D3252;
     
 }
 
@@ -260,3 +267,17 @@ footer {
 
 }
 
+/* This CSS targets all input fields of type 'number' */
+input[type="number"] {
+    /* Hides the up and down arrows */
+    -moz-appearance: textfield; /* For Firefox */
+    appearance: textfield; /* Standard syntax */
+}
+  
+  /* For Chrome, Safari, Edge, and Opera */
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
