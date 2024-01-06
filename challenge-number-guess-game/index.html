@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Open+Sans&family=Work+Sans:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codecademy Challenge Project: Number Guesser</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+      </ul>
+    </nav>
+    <header><h1>Codecademy Challenge Project: Number Guesser</h1></header>
+    <main>
+      <div class="main-div-1">
+        <h2>Round: <span>1</span></h2>
+        <p>Target Number: <span>?</span></p>
+      </div>
+      <div class="main-div-2">
+        <h3>Computer</h3>
+        <p>Score: <span>0</span></p>
+        <p>?</p>
+        <p id="computer-win-text"></p>
+      </div>
+      <div class="main-div-3">
+        <h3>Human</h3>
+        <p>Score: <span>0</span></p>
+        <input type="number" id="human-guess" min="0" max="9" value="0" />
+        <div class="number-controls">
+          <button class="number-control left" id="subtract" disabled>-</button>
+          <button class="number-control right" id="add">+</button>
+          <button class="make-a-guess">Make a Guess</button>
+        </div>
+      </div>
+      <div class="main-div-4">
+        <button>Next Round</button>
+      </div>
+    </main>
+    <section class="instructions-container">
+      <div class="instruction1">
+        <h3>Step 1</h3>
+        <p>Input a number between 0 and 9</p>
+      </div>
+      <div class="instruction2">
+        <h3>Step 2</h3>
+        <p>
+          Click "Make a Guess" to submit your guess and see who won the round.
+        </p>
+      </div>
+      <div class="instruction3">
+        <h3>Step 3</h3>
+        <p>Click "Next Round" to play again.</p>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Challenge project for Codecademy while I am learning the Front End
+        Developer Path. Page created by Rob Dunn.
+      </p>
+    </footer>
+  </body>
+</html>
