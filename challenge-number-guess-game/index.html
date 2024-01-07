@@ -11,39 +11,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Codecademy Challenge Project: Number Guesser</title>
+    <script defer src="main.js"></script>
   </head>
   <body>
     <nav>
       <ul>
         <li>Placeholder</li>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
+        <li>Nav</li>
+        <li>Links</li>
       </ul>
     </nav>
-    <header><h1>Codecademy Challenge Project: Number Guesser</h1></header>
+    <header>
+      <h1>Codecademy Unguided Project: Number Guesser</h1>
+      <p>My First project where i built the HTML, CSS and JavaScript from scratch. </p>
+      <p>Using Knowledge gained I used Semantic HTML, Box Shaddow, CSS Flex, CSS Grid, JavaScript functions and what I think are complex 'Math' objects methods such as floor, random and abs. </p>
+    </header>
     <main>
       <div class="main-div-1">
-        <h2>Round: <span>1</span></h2>
-        <p>Target Number: <span>?</span></p>
+        <h2>Round: <span id="round-number">1</span></h2>
+        <p>Target Number: <span id="target-number">?</span></p>
       </div>
       <div class="main-div-2">
         <h3>Computer</h3>
-        <p>Score: <span>0</span></p>
-        <p>?</p>
+        <p>Score: <span id="computer-score">0</span></p>
+        <p>Computer guess: <span id="computer-guess">?</span></p>
         <p id="computer-win-text"></p>
       </div>
       <div class="main-div-3">
         <h3>Human</h3>
-        <p>Score: <span>0</span></p>
+        <p>Score: <span id="human-score">0</span></p>
         <input type="number" id="human-guess" min="0" max="9" value="0" />
         <div class="number-controls">
           <button class="number-control left" id="subtract" disabled>-</button>
           <button class="number-control right" id="add">+</button>
-          <button class="make-a-guess">Make a Guess</button>
+          <button class="make-a-guess" id="make-a-guess">Make a Guess</button>
+          <p id="Human-win-text"></p>
         </div>
       </div>
       <div class="main-div-4">
-        <button>Next Round</button>
+        <button id="next-round">Next Round</button>
       </div>
     </main>
     <section class="instructions-container">
