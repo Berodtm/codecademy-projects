@@ -122,6 +122,7 @@ const nextRoundFunction = () => {
     subtract.style.backgroundColor = "#0D3252";
     add.disabled = false;
     add.style.backgroundColor = "#0D3252";
+    humanGuessElement.disabled = false;
 
     makeAGuess.disabled = false;
     makeAGuess.style.backgroundColor = "#0D3252";
