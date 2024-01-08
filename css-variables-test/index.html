@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design with CSS Variables</title>
+    <style>
+        /* Define the CSS Variables */
+        :root {
+            --main-color: black;
+            --background-color: white;
+            --content-padding: 10px;
+        }
+
+        /* Base Styles */
+        body {
+            color: var(--main-color);
+            background-color: var(--background-color);
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            padding: var(--content-padding);
+            border: 1px solid var(--main-color);
+        }
+
+        /* Media Query for Medium Screens */
+        @media (min-width: 600px) {
+            :root {
+                --main-color: blue;
+                --background-color: lightblue;
+                --content-padding: 20px;
+            }
+        }
+
+        /* Media Query for Large Screens */
+        @media (min-width: 1000px) {
+            :root {
+                --main-color: green;
+                --background-color: lightgreen;
+                --content-padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Welcome to My Webpage</h1>
+        <p>This is a demo of using CSS variables with media queries.</p>
+        <p>Resize the browser window to see how colors and padding change!</p>
+    </div>
+</body>
+
+</html>
