@@ -45,6 +45,11 @@ button:active {
     border: #2898FA solid 3px;
 }
 
+#next-round {
+    background-color: grey;
+    color: #0D3252;
+}
+
 #subtract, #add {
     width: 70px;
     font-size: larger;
