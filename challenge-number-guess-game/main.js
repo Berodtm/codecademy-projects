@@ -13,7 +13,7 @@ const humanDivElement = document.getElementsByClassName('main-div-3')[0];
 const computerDivElement = document.getElementsByClassName('main-div-2')[0];
 
 // numbers
-let roundNumber = 0;
+let roundNumber = 1;
 let targetNumber = 0;
 let humanScore = 0;
 let computerScore = 0;
@@ -78,7 +78,7 @@ const makeAGuessFunction = () => {
   computerGuess = Math.floor(Math.random() * 9);
   computerGuessElement.innerText = computerGuess;
   roundNumber++;
-  roundNumberElement.innerText = roundNumber;
+  
   makeAGuess.disabled = true;
   makeAGuess.style.backgroundColor = "grey";
   makeAGuess.innerText = "Press Next Round";
@@ -86,6 +86,9 @@ const makeAGuessFunction = () => {
   subtract.disabled = true;
   add.disabled = true;
   humanGuessElement.disabled = true;
+  nextRound.disabled = false;
+  nextRound.style.backgroundColor = "#0D3252";
+  nextRound.style.color = "#2898FA";
 
   // Calculate the differences
   const humanDifference = Math.abs(targetNumber - humanGuessValue);
@@ -136,6 +139,10 @@ const nextRoundFunction = () => {
     computerWinElement.innerText = "";
     targetNumberElement.innerText ="?";
     computerGuessElement.innerText = "?";
+    nextRound.disabled = true;
+    nextRound.style.backgroundColor = "grey";
+    nextRound.style.color = "#0D3252";
+    roundNumberElement.innerText = roundNumber;
   };
 
 // Event Listeners and DOM
