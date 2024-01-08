@@ -101,16 +101,16 @@ const makeAGuessFunction = () => {
     computerWinElement.innerText = "Computer Loses!";
     humanScore++;
     humanScoreElement.innerText = humanScore;
-    humanDivElement.style.boxShadow = "5px 5px 20px 6px #1ed920";
-    computerDivElement.style.boxShadow = "5px 5px 20px 6px #df2a2a";
+    humanDivElement.style.boxShadow = "0px 0px 20px 4px #1ed920";
+    computerDivElement.style.boxShadow = "0px 0px 20px 6px #df2a2a";
   } else {
     winner = "computer";
     computerWinElement.innerText = "Computer is the Winner!";
     humanWinElement.innerText = "Better luck next time!";
     computerScore++;
     computerScoreElement.innerText = computerScore;
-    humanDivElement.style.boxShadow = "5px 5px 20px 6px #df2a2a";
-    computerDivElement.style.boxShadow = "5px 5px 20px 6px #1ed920";
+    humanDivElement.style.boxShadow = "0px 0px 20px 6px #df2a2a";
+    computerDivElement.style.boxShadow = "0px 0px 20px 6px #1ed920";
 
 
   }
