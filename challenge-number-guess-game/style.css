@@ -67,6 +67,10 @@ nav {
     margin-bottom: 10px;
 }
 
+nav a {
+    color: #2898FA;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -105,6 +109,10 @@ main div {
     border-radius: 5px;
     color: #0D3252;
     
+}
+
+main p {
+    margin: 10px;
 }
 
 .main-div-1 {
