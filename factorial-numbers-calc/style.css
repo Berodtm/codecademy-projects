@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: auto; */
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #144A7A;
+    color: #2898FA;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: #b1d9fc;
+}
+h1 {
+    font-size: 1.7em;
+}
+h2 {
+    font-size: 1.2em;
+}
+button, input {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+button {
+    background-color: #0D3252;
+    color: #2898FA;
+    margin-bottom: 10px;
+    /* box-shadow: 0px 0px 4px 1px #0d3252; */
+}
+button:hover {
+    cursor: pointer;
+    outline: auto;
+}
+button:active {
+    /* font-weight: bold; */
+    outline: #2898FA;
+    border: #2898FA solid 3px;
+}
+/*  nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #0D3252;
+    color: #2898FA;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #2898FA;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    /* Removes the default list styling */
+
+}
+
+nav li {
+    padding: 0 10px;
+    text-decoration: underline;
+}
+
+
+/* grid  */
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    /* gap: 1em; */
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    max-width: 900px;
+    /* position: relative; */
+    margin: auto;
+    grid-template-areas:
+        ".header"
+        ".number-input"
+        ".calc-output"
+        ".more-calc";
+    /* grid-template-rows: auto auto auto; */
+    padding: 30px 10px;
+    background-color: #348ddb;
+    color: #0D3252;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 6px #0d3252;
+    
+}
+
+.header {
+    text-align: center;
+    
+}
+
+.number-input {
+    text-align: center;
+    
+}
+
+.calc-output {
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.more-calc {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* footer */
+
+footer {
+    margin: auto;
+    /* max-width: 900px; */
+    width: 100%;
+    text-align: center;
+    background-color: #0D3252;
+    color: #2898FA;
+    padding: 50px;
+}
+
+
+
+/* This CSS targets all input fields of type 'number' */
+input[type="number"] {
+    /* Hides the up and down arrows */
+    -moz-appearance: textfield; /* For Firefox */
+    appearance: textfield; /* Standard syntax */
+}
+  
+  /* For Chrome, Safari, Edge, and Opera */
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
